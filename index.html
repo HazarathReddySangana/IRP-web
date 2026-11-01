@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IRP LMS helps students learn technical skills, build projects and prepare for placements.">
+  <title>IRP LMS | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="IRP LMS home">
+      <img src="https://res.cloudinary.com/dwh7w9kz1/image/upload/v1793204894/irp_lms_navbar_icon_rc0f9k.png" alt="IRP LMS logo">
+      <span>IRP LMS</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a>
+      <a class="" href="courses.html">Courses</a>
+      <a class="" href="contact.html">Contact Us</a>
+    </nav>
+    <a class="sign-in" href="#" aria-label="Sign in (demo link)">Sign In</a>
+  </div>
+</header>
+<main>
+  <section class="hero home-hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="kicker">Learn • Build • Get Placed</p>
+        <h1>Welcome to <span>IRP LMS</span> Platform</h1>
+        <p>Your step-by-step learning journey to build skills, gain confidence and get placed in your dream job.</p>
+        <a class="btn" href="courses.html">Explore Courses <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Your Learning Journey</h2>
+        <p>Follow these steps to build your skills and get ready for placement.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-number">1</div><h3>Learn</h3><p>Take structured courses and build concepts.</p></article>
+        <article class="step-card"><div class="step-number">2</div><h3>Practice</h3><p>Solve problems and improve your skills.</p></article>
+        <article class="step-card"><div class="step-number">3</div><h3>Build Projects</h3><p>Work on real-world projects for your portfolio.</p></article>
+        <article class="step-card"><div class="step-number">4</div><h3>Prepare</h3><p>Get interview ready with mock sessions and guidance.</p></article>
+        <article class="step-card"><div class="step-number">5</div><h3>Get Placed</h3><p>Apply to drives and achieve your career goals.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">© 2026 IRP LMS. Learn • Build • Get Placed.</div>
+</footer>
+<script>
+  function toggleMenu(button) {
+    const nav = button.parentElement.querySelector(".nav-links");
+    const isOpen = nav.classList.toggle("open");
+    button.setAttribute("aria-expanded", String(isOpen));
+  }
+</script>
+</body>
+</html>
